@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="admin-container">
+  <h2>Panel de Citas</h2>
+  <div id="lista"></div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script>
+const socket = io();
+const lista = document.getElementById("lista");
+
+socket.on("nuevaCita", (data) => {
+  const div = document.createElement("div");
+  div.className = "cita";
+  div.innerHTML = `
+    <strong>${data.nombre}</strong><br>
+    ${data.fecha} - ${data.hora}
+  `;
+  lista.prepend(div);
+});
+</script>
+
+</body>
+</html>

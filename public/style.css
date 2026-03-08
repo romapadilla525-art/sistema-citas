@@ -1,0 +1,64 @@
+body {
+  font-family: Arial;
+  background: linear-gradient(135deg, #4e73df, #1cc88a);
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.calendario, .admin-container {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  width: 400px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.horarios {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.horarios button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #4e73df;
+  color: white;
+  cursor: pointer;
+}
+
+.horarios button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.horarios button.seleccionado {
+  background: #1cc88a;
+}
+
+#reservar {
+  background: #e74a3b;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.cita {
+  padding: 10px;
+  background: #f9f9f9;
+  margin-bottom: 8px;
+  border-left: 5px solid #4e73df;
+  border-radius: 5px;
+}

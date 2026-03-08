@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./">
+    <link rel="stylesheet" href="./public/style.css">
+    <title>Clientes</title>
+</head>
+<body>
+<div class="calendario">
+  <h2>Reservar Cita</h2>
+
+  <input type="date" id="fecha">
+
+  <div class="horarios">
+    <button>09:00</button>
+    <button>10:30</button>
+    <button>12:00</button>
+    <button>13:30</button>
+    <button>15:00</button>
+    <button>16:30</button>
+  </div>
+
+  <input type="text" id="nombre" placeholder="Tu nombre">
+  <input type="tel" id="telefono" placeholder="WhatsApp">
+
+  <button id="reservar">Confirmar Cita</button>
+
+  <div id="mensaje"></div>
+</div>
+
+
+    <script src="script.js"></script>
+    <script src="./server.js"></script>
+</body>
+
+</html>
